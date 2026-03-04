@@ -1,0 +1,23 @@
+services:
+  eyewear-kirtana:
+    build: .
+    container_name: kirtana-eyewear
+    env_file:
+      - .env
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.kirtana.rule=Host(`${DOMAIN}`)
+      - traefik.http.routers.kirtana.entrypoints=websecure
+      - traefik.http.routers.eyewear.tls=true
+      - traefik.http.services.kirtana.loadbalancer.server.port=80
+
+    networks:
+      - traefik
+
+    restart: unless-stopped
+
+  networks:
+    traefik:
+      external: true
+      name: root_default
