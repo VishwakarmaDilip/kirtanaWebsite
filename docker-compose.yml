@@ -10,6 +10,7 @@ services:
       - traefik.http.routers.kirtana.rule=Host(`${DOMAIN}`)
       - traefik.http.routers.kirtana.entrypoints=websecure
       - traefik.http.routers.eyewear.tls=true
+      - traefik.http.routers.admin.tls.certresolver=mytlschallenge
       - traefik.http.services.kirtana.loadbalancer.server.port=80
 
     networks:
