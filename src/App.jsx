@@ -7,7 +7,7 @@ function App() {
       {/* Navbar */}
       <nav className="flex justify-between items-center px-3 pr-4 py-2 bg-white shadow-sm">
         <h1 className="text-2xl font-bold tracking-wide">EYEWEAR</h1>
-        <Icon.Search />
+        <Icon.Menu />
       </nav>
 
       {/* Hero Section */}
