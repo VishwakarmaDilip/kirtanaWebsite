@@ -17,7 +17,7 @@ services:
 
     restart: unless-stopped
 
-  networks:
-    traefik:
-      external: true
-      name: root_default
+networks:
+  traefik:
+    external: true
+    name: root_default
