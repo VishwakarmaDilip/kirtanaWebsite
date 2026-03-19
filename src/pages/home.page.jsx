@@ -24,7 +24,7 @@ function Home() {
       {/* Navbar */}
       <nav className="flex justify-between items-center px-3 pr-4 py-2 bg-[#cdf4ed] shadow-sm">
         <div className=" w-22">
-          <img src="../../public/Logo2.png" alt="" />
+          <img src="/Logo2.png" alt="" />
         </div>
         <Icon.Menu size={30} />
       </nav>
@@ -42,7 +42,7 @@ function Home() {
         </div>
 
         <div className="flex justify-center w-full">
-          <img src="../../public/Logo2.png" alt="" className="w-40" />
+          <img src="/Logo2.png" alt="" className="w-40" />
         </div>
       </section>
 
